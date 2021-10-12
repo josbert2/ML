@@ -1,0 +1,14 @@
+.items__main{
+    li{
+        &.active{
+            background-color: #2ec96342;
+            span{
+              color:#2ec963  
+            }
+            svg{
+                fill: #2ec963 
+            }
+        }
+    }
+   
+}
