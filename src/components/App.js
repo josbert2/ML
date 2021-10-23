@@ -5,6 +5,7 @@ import logo from '../assets/img/logo.svg'
 // Blanco, oro, negro
 // Skibit Global
 import avatar from '../assets/img/avatar-300x300.jpg'
+import svgLogo from '../assets/img/undraw_transfer_money_rywa.svg'
 function App() {
   return (
 
@@ -12,8 +13,10 @@ function App() {
         <div class="fixed w-full top-0">
           <div class="">
             <div class="flex items-center border-b h-16">
-              <div class=" h-full flex items-center w-72 border-r">
-                <img class="w-28 pl-4"  src={logo} />
+              <div class=" h-full flex items-center w-56 border-r">
+                <div class="text-base text-gray-900 font-extrabold ml-7">
+                  Skibit <strong class="text-emerald-500">global</strong>
+                </div>
               </div>
               <div class=" ml-auto flex items-center h-full">
                 <div class="border-r  px-6 h-full flex items-center">
@@ -36,8 +39,8 @@ function App() {
             </div>
           </div>
         </div>
-        <div class=" pt-16 flex">
-          <div class="w-72 border-r absolute h-screen">
+        <div class=" pt-12 flex">
+          <div class="w-56 border-r absolute h-screen">
           
             <ul class="items__main">
               <li class="py-3.5 px-9  group hover:bg-emerald-500 hover:bg-opacity-25 cursor">
@@ -88,8 +91,8 @@ function App() {
             </ul>
 
           </div>
-          <div class=" ml-72 w-full">
-            <div class="  w-full absolute h-64 bg-emerald-500 bg-opacity-80">
+          <div class="  ml-56 w-full">
+            {/*<div class="  w-full absolute h-64 bg-emerald-500 bg-opacity-80">
               <div class="px-6 py-4 h-full flex flex-col">
                 <nav class="bg-grey-light rounded font-sans w-full">
                   <ol class="list-reset flex text-grey-dark">
@@ -105,11 +108,239 @@ function App() {
                 </div>
 
               </div>
-            </div>
+            </div> */}
             
-            <div class="mt-64 w-full">
-              <div class="px-6 py-4">
-                  <div class="three-invite">
+            <div class="mt-9 w-full">
+               <div class="px-6 py-4">
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="col-span-2">
+                        <div class="rounded col-span-2 bg-emerald-300 px-4 py-6 bg-opacity-20 relative">
+                          <div class="w-96">
+                            <div class="text-emerald-400 font-bold text-base">
+                              Welcome
+                            </div>
+                            <div class="text-gray-500 text-sm mt-5">
+                              Para esta semana tienes <strong>+ 12 personas</strong> a tu cooperacion y tu profit es de <strong>$684.435</strong>
+                            </div>
+                          </div>
+                          <div class="w-52  h-52 absolute -top-1 right-0">
+                            <img class="w-full h-full" src={svgLogo} />
+                          </div>
+                        </div>  
+                       
+                    </div>
+                    <div class="">
+                      <div class="bg-emerald-400 rounded px-4 py-4">
+                        <div class="text-base font-bold mb-2 text-white">
+                          Invitaciones
+                        </div>
+                        <div class="flex flex-col">
+                          <div class="flex items-center">
+                            <div class="text-white  text-opacity-90 text-xs">
+                              Invitaciones enviadas
+                            </div>
+                            <div class="text-white text-xs text-light ml-auto text-base">
+                              <strong>35</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col my-2">
+                          <div class="flex items-center">
+                            <div class="text-white text-opacity-90 text-xs">
+                              Invitados por semana
+                            </div>
+                            <div class="text-white text-xs text-light ml-auto text-base">
+                              <strong>12</strong>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flex flex-col my-2">
+                          <div class="flex items-center">
+                            <div class="text-white text-opacity-90 text-xs">
+                              Registros
+                            </div>
+                            <div class="text-white text-xs text-light ml-auto text-base">
+                              <strong>2</strong>
+                            </div>
+                          </div>
+                        </div>
+                          <div class="mt-6 ml-auto flex justify-end items-center">
+                            <a class="underline lowercase text-xs text-white font-light" href="">
+                              Más
+                            </a>
+                            <div class="ml-2">
+                              <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"/></svg>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  <div class=" grid grid-cols-3 gap-4 mt-6">
+                    <div class="">
+                          <div class="w-full max-w-3xl">
+                            <div class="-mx-2 md:flex">
+                              <div class="w-full  px-2">
+                                <div class="rounded-lg shadow-sm mb-4">
+                                  <div class="rounded-lg bg-white shadow-lg md:shadow-xl relative overflow:hidden">
+                                    <div class="px-3 pt-8 pb-10 text-center relative z-10">
+                                      <h4 class="text-sm uppercase text-gray-500 leading-tight">
+                                       Ganado
+                                      </h4>
+                                      <h3 class="text-3xl text-gray-700 font-semibold leading-tight my-3">
+                                       $ 232
+                                      </h3>
+                                      <p class="text-xs text-green-500 leading-tight">
+                                        🔺 20.9%
+                                      </p>
+                                    </div>
+                                    <div class="absolute bottom-0 inset-x-0">
+                                      <canvas id="chart1" height="70"></canvas>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="w-full max-w-3xl">
+                            <div class="-mx-2 md:flex">
+                              <div class="w-full  px-2">
+                                <div class="rounded-lg shadow-sm mb-4">
+                                  <div class="rounded-lg bg-white shadow-lg md:shadow-xl relative overflow:hidden">
+                                    <div class="px-3 pt-8 pb-10 text-center relative z-10">
+                                      <h4 class="text-sm uppercase text-gray-500 leading-tight">
+                                       Cash Flow
+                                      </h4>
+                                      <h3 class="text-3xl text-gray-700 font-semibold leading-tight my-3">
+                                        $34
+                                      </h3>
+                                      <p class="text-xs text-green-500 leading-tight">
+                                        🔺 40.9%
+                                      </p>
+                                    </div>
+                                    <div class="absolute bottom-0 inset-x-0">
+                                      <canvas id="chart2" height="70"></canvas>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="w-full max-w-3xl">
+                            <div class="-mx-2 md:flex">
+                              <div class="w-full  px-2">
+                                <div class="rounded-lg shadow-sm mb-4">
+                                  <div class="rounded-lg bg-white shadow-lg md:shadow-xl relative overflow:hidden">
+                                    <div class="px-3 pt-8 pb-10 text-center relative z-10">
+                                      <h4 class="text-sm uppercase text-gray-500 leading-tight">
+                                       Potencial
+                                      </h4>
+                                      <h3 class="text-3xl text-gray-700 font-semibold leading-tight my-3">
+                                        63
+                                      </h3>
+                                      <p class="text-xs text-green-500 leading-tight">
+                                        🔺 40.9%
+                                      </p>
+                                    </div>
+                                    <div class="absolute bottom-0 inset-x-0">
+                                      <canvas id="chart3" height="70"></canvas>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="mt-6">
+      
+                    <div>
+                      <h3 class="text-lg leading-6 font-medium text-gray-900">
+                        Ultimos 30 dias - Recompensas
+                      </h3>
+                      <dl class="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
+                        <div class="px-4 py-5 sm:p-6 flex flex-col">
+                          <dt class="text-base font-normal text-emerald-400 mb-6">
+                            Para el primer registro en línea
+                          </dt>
+                          <dd class="mt-1 mt-auto flex justify-between items-baseline md:block lg:flex">
+                            <div class="flex items-baseline text-2xl font-semibold text-indigo-600">
+                              $50
+                              
+                            </div>
+
+                            <div class="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium bg-emerald-100 text-green-800 md:mt-2 lg:mt-0">
+                              
+                              <svg class="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                              </svg>
+                              <span class="sr-only">
+                                Increased by
+                              </span>
+                              12%
+                            </div>
+                          </dd>
+                        </div>
+
+                        <div class="px-4 py-5 sm:p-6 flex flex-col">
+                          <dt class="text-base font-normal text-emerald-400 mb-6">
+                            para el nivel "Inicio" en 3 líneas más de $ 100 en 2 períodos de pago
+
+                          </dt>
+                          <dd class="mt-1 mt-auto flex justify-between items-baseline md:block lg:flex">
+                            <div class="flex items-baseline text-2xl font-semibold text-indigo-600">
+                              $100
+                              <span class="ml-2 text-sm font-medium text-gray-500">
+                                
+                              </span>
+                            </div>
+
+                            <div class="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium bg-emerald-100 text-green-800 md:mt-2 lg:mt-0">
+                              
+                              <svg class="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                              </svg>
+                              <span class="sr-only">
+                                Increased by
+                              </span>
+                              2.02%
+                            </div>
+                          </dd>
+                        </div>
+
+                        <div class="px-4 py-5 sm:p-6 flex flex-col">
+                          <dt class="text-base font-normal text-emerald-400">
+                            para el nivel "Manager" en 3 líneas más de $ 300 en 3 períodos de pago
+                          </dt>
+                          <dd class="mt-1 mt-auto flex justify-between items-baseline md:block lg:flex">
+                            <div class="flex items-baseline text-2xl font-semibold text-indigo-600">
+                              $300
+                            </div>
+
+                            <div class="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800 md:mt-2 lg:mt-0">
+                            
+                              <svg class="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                              </svg>
+                              <span class="sr-only">
+                                Decreased by
+                              </span>
+                              4.05%
+                            </div>
+                          </dd>
+                        </div>
+                      </dl>
+                    </div>
+
+                  </div>
+                 
+                  
+                  {/*<div class="three-invite">
                       <div class="main__three flex flex-col">
                           <div class="section__three" data-level="1">
                             <div class="flex flex-col items-center invite-train-three" >
@@ -149,7 +380,7 @@ function App() {
                               </div>
                           </div>
                       </div>
-                  </div>
+  </div>*/}
               </div>
             </div>
           </div>
