@@ -1,7 +1,12 @@
 import React from 'react'
 import '../styles/styles.css'
 import  '../assets/scss/index.scss'
-
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 function Landing() {
   return (
 
@@ -11,7 +16,7 @@ function Landing() {
                 <div class="container px-4 mx-auto bg-transparent">
                     <nav class="bg-transparent flex justify-between items-center py-3">
                         <a class="text-3xl font-semibold leading-none" href="index.html">
-                            <img class="h-10" src="http://wp.alithemes.com/html/monst/assets/imgs/logos/monst-logo.svg" alt="" />
+                        <div class="text-base text-gray-900 font-extrabold ml-7">Skibit <strong class="text-emerald-500">global</strong></div>
                         </a>
                         <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
                             <li class="group relative pt-4 pb-4 has-child">
@@ -89,11 +94,16 @@ function Landing() {
                             <li class="pt-4 pb-4"><a class="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500" href="contact.html">Contact</a></li>
                         </ul>
                         <div class="hidden lg:block">
-                            <a class="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-blue-500 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="login.html">Log In</a>
-                            <a class="tracking-wide hover-up-2 inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-400 hover:bg-blue-500 text-white rounded" href="signup.html">Sign Up</a>
+                            <Link to="/login" class="tracking-wide hover-up-2 mr-2 inline-block px-4 py-3 text-xs text-emerald-500 hover:text-emerald-700 font-semibold leading-none border border-emerald-200 hover:border-emerald-300 rounded" href="login.html">
+                           
+                            Registrarme
+                            </Link>
+                           <Link to="/login" class="tracking-wide hover-up-2 inline-block px-4 py-3 text-xs font-semibold leading-none bg-emerald-400 hover:bg-emerald-500 hov  text-white rounded">
+                           Iniciar session
+                           </Link>
                         </div>
                         <div class="lg:hidden">
-                            <button class="navbar-burger flex items-center py-2 px-3 text-blue-500 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">
+                            <button class="navbar-burger flex items-center py-2 px-3 text-emerald-500 hover:text-emerald-700 rounded border border-emerald-200 hover:border-emerald-300">
                                 <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <title>Mobile menu</title>
                                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -111,7 +121,7 @@ function Landing() {
                             <img class="h-10" src="http://wp.alithemes.com/html/monst/assets/imgs/logos/monst-logo.svg" alt="" />
                         </a>
                         <button class="navbar-close">
-                            <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                             </svg>
                         </button>
@@ -120,77 +130,77 @@ function Landing() {
                         <ul class="mobile-menu">
                             <li class="mb-1 menu-item-has-children rounded-xl">
                                 <span class="menu-expand">+</span>
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl" href="#">Home</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500 rounded-xl" href="#">Home</a>
                                 <ul class="dropdown pl-5" style={{ display: "none;" }}>
                                     <li>
-                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="index.html">Home 1</a>
+                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="index.html">Home 1</a>
                                     </li>
                                     <li>
-                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="index-2.html">Home 2</a>
+                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="index-2.html">Home 2</a>
                                     </li>
                                     <li>
-                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="index-3.html">Home 3</a>
+                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="index-3.html">Home 3</a>
                                     </li>
                                     <li>
-                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="index-4.html">Home 4</a>
+                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="index-4.html">Home 4</a>
                                     </li>
                                     <li>
-                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="index-5.html">Home 5</a>
+                                        <a class="block p-3 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="index-5.html">Home 5</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="mb-1 rounded-xl">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl" href="about.html">About Us</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500 rounded-xl" href="about.html">About Us</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="services.html">Services</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="services.html">Services</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="portfolio.html">Portfolio</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="portfolio.html">Portfolio</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="pricing.html">Pricing</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="pricing.html">Pricing</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="team.html">Team</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="team.html">Team</a>
                             </li>
                             <li class="mb-1 menu-item-has-children rounded-xl">
                                 <span class="menu-expand">+</span>
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="team.html">Blog</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="team.html">Blog</a>
                                 <ul class="dropdown pl-5" style={{ display: "none;" }}>
                                     <li>
-                                        <a href="blog.html" class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">Category 1</a>
+                                        <a href="blog.html" class="block p-3 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500">Category 1</a>
                                     </li>
                                     <li>
-                                        <a href="blog-2.html" class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">Category 2</a>
+                                        <a href="blog-2.html" class="block p-3 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500">Category 2</a>
                                     </li>
                                     <li>
-                                        <a href="blog-single.html" class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">Single 1</a>
+                                        <a href="blog-single.html" class="block p-3 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500">Single 1</a>
                                     </li>
                                     <li>
-                                        <a href="blog-single-2.html" class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">Single 2</a>
+                                        <a href="blog-single-2.html" class="block p-3 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500">Single 2</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="faqs.html">Faqs</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="faqs.html">Faqs</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="testimonials.html">Testimonial</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="testimonials.html">Testimonial</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" href="contact.html">Contact Us</a>
+                                <a class="block p-4 text-sm text-blueGray-500 hover:bg-emerald-50 hover:text-emerald-500" href="contact.html">Contact Us</a>
                             </li>
                         </ul>
                         <div class="mt-4 pt-6 border-t border-blueGray-100">
-                            <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-500 hover:bg-blue-700 text-white rounded" href="#">Sign Up</a>
-                            <a class="block px-4 py-3 mb-2 text-xs text-center text-blue-500 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Log In</a>
+                            <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-emerald-500 hover:bg-emerald-700 text-white rounded" href="#">Sign Up</a>
+                            <a class="block px-4 py-3 mb-2 text-xs text-center text-emerald-500 hover:text-emerald-700 font-semibold leading-none border border-emerald-200 hover:border-emerald-300 rounded" href="#">Log In</a>
                         </div>
                     </div>
                     <div class="mt-auto">
                         <p class="my-4 text-xs text-blueGray-400">
                             <span>Get in Touch</span>
-                            <a class="text-blue-500 hover:text-blue-500 underline" href="#">contact@monst.com</a>
+                            <a class="text-emerald-500 hover:text-emerald-500 underline" href="#">contact@monst.com</a>
                         </p>
                         <a class="inline-block px-1" href="#">
                             <img src="assets/imgs/icons/facebook-blue.svg" alt="" />
@@ -211,17 +221,17 @@ function Landing() {
                             <div class="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
                                 <h2 class="text-3xl lg:text-4xl mb-4 font-bold font-heading wow animate__ animate__fadeIn animated">
                                     Exclusive Agency For <br />
-                                    <span class="text-blue-500">Technology </span>Provide Solution
+                                    <span class="text-emerald-500">Technology </span>Provide Solution
                                 </h2>
                                 <p class="text-blueGray-400 leading-relaxed wow animate__ animate__fadeIn animated" >
-                                    We are <strong class="text-blue-500">Monst</strong>, a Creative Design
+                                    We are <strong class="text-emerald-500">Monst</strong>, a Creative Design
                                     <span class="typewrite d-inline text-brand" data-period="3000" data-type='["Web Agency", "Social Marketing" ]'><span class="wrap">Social Marketing</span></span>
                                 </p>
                                 <p class="text-blueGray-400 leading-relaxed wow animate__ animate__fadeIn mt-3 text-sm animated" >Helping you maximize operations management with digitization</p>
                             </div>
                             <div class="text-center lg:text-left">
                                 <a
-                                    class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded wow animate__ animate__fadeInUp animated"
+                                    class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-emerald-500 hover:bg-emerald-700 rounded wow animate__ animate__fadeInUp animated"
                                     href="#key-features"
                                     
                                 >
@@ -249,7 +259,7 @@ function Landing() {
                 <div class="container px-4 mx-auto">
                     <div class="max-w-lg mx-auto mb-20 text-center">
                         <span
-                            class="inline-block text-xs py-1 px-3 text-blue-700 font-semibold bg-blue-100 rounded-xl wow animate__ animate__fadeInUp animated"
+                            class="inline-block text-xs py-1 px-3 text-emerald-700 font-semibold bg-emerald-100 rounded-xl wow animate__ animate__fadeInUp animated"
                             data-wow-delay=".5s"
                             
                         >
@@ -322,7 +332,7 @@ function Landing() {
                     <div class="max-w-lg mx-auto mb-12 text-center">
                         <h2 class="my-2 text-3xl md:text-4xl font-bold font-heading wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" >
                             We Consultant to Get <br />
-                            <span class="text-blue-500">Our Business</span> Plan
+                            <span class="text-emerald-500">Our Business</span> Plan
                         </h2>
                         <p class="text-blueGray-400 leading-loose wow animate__ animate__fadeInUp animated" data-wow-delay=".3s" >
                             Business solution company sit our any how site used the our company any site us it-solve theme is very professional
@@ -335,7 +345,7 @@ function Landing() {
                                 data-wow-delay=".3s"
 
                             >
-                                <div class="text-blue-500 mx-auto mb-4">
+                                <div class="text-emerald-500 mx-auto mb-4">
                                     <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             stroke-linecap="round"
@@ -355,7 +365,7 @@ function Landing() {
                                 data-wow-delay=".5s"
                                 
                             >
-                                <div class="text-blue-500 mx-auto mb-4">
+                                <div class="text-emerald-500 mx-auto mb-4">
                                     <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             stroke-linecap="round"
@@ -375,7 +385,7 @@ function Landing() {
                                 data-wow-delay=".7s"
                                
                             >
-                                <div class="text-blue-500 mx-auto mb-4">
+                                <div class="text-emerald-500 mx-auto mb-4">
                                     <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             stroke-linecap="round"
@@ -395,7 +405,7 @@ function Landing() {
                                 data-wow-delay=".9s"
      
                             >
-                                <div class="text-blue-500 mx-auto mb-4">
+                                <div class="text-emerald-500 mx-auto mb-4">
                                     <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
@@ -411,7 +421,7 @@ function Landing() {
                                 data-wow-delay=".3s"
                                
                             >
-                                <div class="text-blue-500 mx-auto mb-4">
+                                <div class="text-emerald-500 mx-auto mb-4">
                                     <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
                                     </svg>
@@ -426,7 +436,7 @@ function Landing() {
                                 data-wow-delay=".5s"
                                 
                             >
-                                <div class="text-blue-500 mx-auto mb-4">
+                                <div class="text-emerald-500 mx-auto mb-4">
                                     <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                     </svg>
@@ -441,7 +451,7 @@ function Landing() {
                                 data-wow-delay=".7s"
                                
                             >
-                                <div class="text-blue-500 mx-auto mb-4">
+                                <div class="text-emerald-500 mx-auto mb-4">
                                     <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             stroke-linecap="round"
@@ -461,7 +471,7 @@ function Landing() {
                                 data-wow-delay=".9s"
                                
                             >
-                                <div class="text-blue-500 mx-auto mb-4">
+                                <div class="text-emerald-500 mx-auto mb-4">
                                     <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             stroke-linecap="round"
@@ -478,7 +488,7 @@ function Landing() {
                     </div>
                     <div class="text-center">
                         <a
-                            class="inline-block py-4 px-8 text-xs text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded wow animate__ animate__fadeInUp animated"
+                            class="inline-block py-4 px-8 text-xs text-white font-semibold leading-none bg-emerald-500 hover:bg-emerald-700 rounded wow animate__ animate__fadeInUp animated"
                             data-wow-delay=".3s"
                             href="testimonials.html"
                           
@@ -493,7 +503,7 @@ function Landing() {
                     <div class="text-center mb-16">
                         <h2 class="max-w-lg mx-auto mb-4 text-4xl font-bold font-heading wow animate__ animate__fadeInUp animated" data-wow-delay=".2s" >
                             <span>Start saving time today and</span>
-                            <span class="text-blue-500">choose</span>
+                            <span class="text-emerald-500">choose</span>
                             <span>your best plan</span>
                         </h2>
                         <p class="max-w-sm mx-auto text-lg text-blueGray-400 wow animate__ animate__fadeInDown animated" data-wow-delay=".5s">
@@ -505,7 +515,7 @@ function Landing() {
                             <div class="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__ animate__fadeInUp animated" data-wow-delay=".2s" >
                                 <img class="h-20 mb-6 mx-auto" src="assets/imgs/icons/startup.svg" alt="" />
                                 <h3 class="mb-2 text-4xl font-bold font-heading">Startup</h3>
-                                <span class="text-4xl text-blue-500 font-bold font-heading">$45.99</span>
+                                <span class="text-4xl text-emerald-500 font-bold font-heading">$45.99</span>
                                 <p class="mt-2 mb-8 text-blueGray-400">user per month</p>
                                 <div class="flex flex-col items-center mb-8">
                                     <ul class="text-blueGray-400">
@@ -536,7 +546,7 @@ function Landing() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <a class="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded" href="#">Start Free Trial</a>
+                                    <a class="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-emerald-500 hover:bg-emerald-700 rounded" href="#">Start Free Trial</a>
                                     <a class="block sm:inline-block py-4 px-6 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded" href="#">
                                         Purchase
                                     </a>
@@ -545,7 +555,7 @@ function Landing() {
                         </div>
                         <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                             <div
-                                class="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded shadow wow animate__ animate__fadeInUp animated"
+                                class="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-emerald-500 rounded shadow wow animate__ animate__fadeInUp animated"
                                 data-wow-delay=".4s"
 
                             >
@@ -582,8 +592,8 @@ function Landing() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <a class="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded" href="#">Start Free Trial</a>
-                                    <a class="block sm:inline-block py-4 px-6 text-xs font-semibold leading-none border border border-blue-500 hover:border-blue-400 rounded" href="#">Purchase</a>
+                                    <a class="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-emerald-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded" href="#">Start Free Trial</a>
+                                    <a class="block sm:inline-block py-4 px-6 text-xs font-semibold leading-none border border border-emerald-500 hover:border-emerald-400 rounded" href="#">Purchase</a>
                                 </div>
                             </div>
                         </div>
@@ -591,7 +601,7 @@ function Landing() {
                             <div class="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__ animate__fadeInUp animated" data-wow-delay=".6s" >
                                 <img class="h-20 mb-6 mx-auto" src="assets/imgs/icons/enterprise.svg" alt="" />
                                 <h3 class="mb-2 text-4xl font-bold font-heading">Enterprise</h3>
-                                <span class="text-4xl text-blue-500 font-bold font-heading">$85.99</span>
+                                <span class="text-4xl text-emerald-500 font-bold font-heading">$85.99</span>
                                 <p class="mt-2 mb-8 text-blueGray-400">user per month</p>
                                 <div class="flex flex-col items-center mb-8">
                                     <ul class="text-blueGray-400">
@@ -622,7 +632,7 @@ function Landing() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <a class="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded" href="#">Start Free Trial</a>
+                                    <a class="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-emerald-500 hover:bg-emerald-700 rounded" href="#">Start Free Trial</a>
                                     <a class="block sm:inline-block py-4 px-6 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded" href="#">
                                         Purchase
                                     </a>
@@ -638,7 +648,7 @@ function Landing() {
                         <div class="max-w-lg mx-auto text-center">
                             <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading wow animate__ animate__fadeInUp animated" >
                                 <span>Subscribe now to</span>
-                                <span class="text-blue-500">Our Newsletter</span>
+                                <span class="text-emerald-500">Our Newsletter</span>
                                 <span>and get the Coupon code.</span>
                             </h2>
                             <p class="mb-8 text-blueGray-400 wow animate__ animate__fadeInUp animated" data-wow-delay=".3s" >
@@ -652,7 +662,7 @@ function Landing() {
                                     </svg>
                                     <input class="w-full pl-3 py-4 text-xs text-blueGray-400 font-semibold leading-none bg-blueGray-100 outline-none" type="text" placeholder="Type your e-mail" />
                                 </div>
-                                <button class="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded" type="submit">Sign Up</button>
+                                <button class="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-emerald-500 hover:bg-emerald-700 rounded" type="submit">Sign Up</button>
                             </div>
                         </div>
                     </div>
@@ -662,9 +672,7 @@ function Landing() {
                 <div class="container px-4 mx-auto wow animate__ animate__fadeIn animated" data-wow-delay=".3s">
                     <div class="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
                         <div class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0">
-                            <a class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="index.html">
-                                <img class="h-10" src="http://wp.alithemes.com/html/monst/assets/imgs/logos/monst-logo.svg" alt="" />
-                            </a>
+                        <a class="text-3xl font-semibold leading-none" href="index.html"><div class="text-base text-gray-900 font-extrabold ml-7">Skibit <strong class="text-emerald-500">global</strong></div></a>
                         </div>
                         <div class="w-full lg:w-2/5 px-3 mb-8 lg:mb-0">
                             <p class="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">Helping you <strong>maximize</strong> operations management with digitization</p>
@@ -680,7 +688,7 @@ function Landing() {
                         </div>
                     </div>
                     <div class="flex flex-col lg:flex-row items-center lg:justify-between">
-                        <p class="text-sm text-blueGray-400">© 2021. All rights reserved. Designed by <a class="text-blue-400" href="https://alithemes.com" target="_blank">Alithemes.com</a></p>
+                        <p class="text-sm text-blueGray-400">© 2021. All rights reserved. Designed by <a class="text-emerald-400" href="https://alithemes.com" target="_blank">Alithemes.com</a></p>
                         <div class="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
                             <a class="inline-block px-2" href="#">
                                 <img src="assets/imgs/icons/facebook-blue.svg" alt="" />

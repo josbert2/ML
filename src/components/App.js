@@ -42,7 +42,7 @@ function App() {
           </div>
         </div>
         <div class=" pt-12 flex">
-          <div class="w-56 border-r absolute h-screen">
+          <div class="w-56 border-r absolute h-screen bg-white">
           
             <ul class="items__main mt-6">
               <li class="py-3.5 px-9  group hover:bg-emerald-500 hover:bg-opacity-25 cursor">

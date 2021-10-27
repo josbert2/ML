@@ -5,7 +5,7 @@ import App from './components/App'
 import Landing from './components/Landing'
 import Login from './components/Login'
 import Register from './components/Register'
-import MyReferral from './components/MyReferral'
+import MyReferral from './components/Myreferral'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
