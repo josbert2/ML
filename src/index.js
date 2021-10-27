@@ -5,6 +5,7 @@ import App from './components/App'
 import Landing from './components/Landing'
 import Login from './components/Login'
 import Register from './components/Register'
+import MyReferral from './components/MyReferral'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route path="/dashboard"  component={App}></Route>
         <Route path="/login"  component={Login}></Route>
         <Route path="/register" component={Register}></Route>
+        <Route path="/my-referral" component={MyReferral}></Route>
       </Switch>
     </Router>
   </React.StrictMode>,
